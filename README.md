@@ -95,7 +95,7 @@ Build a dashboard for real-time attrition prediction.
 
 License
 
-This project is licensed under the MIT License. See LICENSE for details.
+This project is licensed under the GNU General Public License v3.0. See LICENSE for details.
 
 
 Contributors
