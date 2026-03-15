@@ -1,106 +1,111 @@
-# HR-Attrition-Prediction-Model
-Introduction
-Employee attrition, or turnover, is a challenge faced by organizations globally. Retaining top talent requires understanding the factors contributing to attrition. This project analyzes employee attrition using a fictional dataset provided by IBM data scientists, implementing advanced data analysis and machine learning techniques.
+# 📊 HR Attrition Prediction Model
 
-Project Objectives
-Understand employee attrition factors.
-Create predictive models to identify high-risk employees.
-Generate insights for HR decision-making.
-Dataset
-Source: IBM fictional HR dataset.
-Target Variable: Attrition (Yes/No).
-Features: 35+ columns including demographics, job role, salary, and performance metrics.
-Prerequisites
-Ensure the following libraries are installed:
+## Overview
+Employee attrition is a major challenge for organizations. This project analyzes employee data to identify the key factors contributing to attrition and builds machine learning models to predict employees at risk of leaving.
 
-Workflow
-1. Data Preprocessing
-Loading Dataset: The dataset is loaded and initial exploration is conducted.
+The goal is to support **HR teams in making data-driven decisions to improve employee retention.**
 
-Handling Missing Values: Imputation and handling of null entries.
+---
 
-Encoding Categorical Variables: Using LabelEncoder and mapping for better compatibility.
+## Dataset
+- **Source:** IBM HR Analytics Dataset  
+- **Target Variable:** Attrition (Yes / No)  
+- **Features:** 35+ variables including:
+  - Demographics
+  - Job role
+  - Salary
+  - Work environment
+  - Performance metrics
 
-Feature Engineering: Creating new features to enhance predictive power:
+---
 
-TotalExperience, PromotionFrequency, and interaction terms.
+## Project Workflow
 
-Outlier Detection: Using the IQR method to identify anomalies.
+### 1️⃣ Data Preprocessing
+- Data cleaning and handling missing values  
+- Encoding categorical variables  
+- Feature engineering (e.g., experience and promotion metrics)  
+- Outlier detection using **IQR method**  
+- Feature scaling using **StandardScaler**
 
-Scaling: StandardScaler is applied for normalization.
+---
 
-3. Balancing Data
+### 2️⃣ Handling Class Imbalance
+- Applied **SMOTE (Synthetic Minority Oversampling Technique)** to balance the dataset.
 
-SMOTE: Addressing class imbalance in the target variable (Attrition).
+---
 
-4. Exploratory Data Analysis (EDA)
+### 3️⃣ Exploratory Data Analysis (EDA)
+- Distribution analysis of numerical features  
+- Attrition analysis by gender and job role  
+- Correlation heatmap to identify feature relationships
 
-Visualizations:
+---
 
-Histograms for numerical features.
+### 4️⃣ Machine Learning Models
+The following models were trained and evaluated:
 
-Attrition breakdown by gender.
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
 
-Correlation Analysis: Identifying relationships among features.
+---
 
-5. Model Building
+## Model Evaluation Metrics
 
-Models Evaluated:
+Models were evaluated using:
 
-Logistic Regression
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC
 
-Decision Tree Classifier
+---
 
-Random Forest Classifier
+## Results
 
-Support Vector Machine (SVM)
+🏆 **Best Model:** Random Forest Classifier  
 
-Model Evaluation Metrics:
+- **Accuracy:** 93.5%  
+- **ROC-AUC:** 98.07%
 
-Accuracy
+---
 
-Precision
+## Key Insights
 
-Recall
+- Employees working frequent **overtime** are more likely to leave.  
+- **Job satisfaction and career growth opportunities** strongly influence retention.  
+- Salary progression relative to peers affects attrition risk.
 
-F1-Score
+---
 
-ROC-AUC
+## Technologies Used
 
-6. Visualization
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Matplotlib  
+- Seaborn  
+- SMOTE
 
-ROC Curve Comparison: Evaluate model performance.
+---
 
-Confusion Matrix: Analyze classification outcomes.
+## Future Improvements
 
-Results
+- Implement **deep learning models** for improved predictions  
+- Integrate **employee sentiment analysis** from feedback or reviews  
+- Build a **dashboard for real-time attrition monitoring**
 
-Best Performing Model: Random Forest Classifier with 93.5% accuracy and 98.07% ROC-AUC score.
+---
 
-Insights:
+## Author
 
-Employees with frequent overtime and lower satisfaction are at higher risk of attrition.
+**Mrunal Gangurde**  
+Data Analyst | MSc Data Science @ University of Leicester
 
+---
 
-Career progression and salary relative to peers significantly impact retention.
-
-
-Future Work
-
-Incorporate deep learning models.
-
-Extend analysis to include sentiment analysis from employee reviews.
-
-Build a dashboard for real-time attrition prediction.
-
-License
-
-This project is licensed under the GNU General Public License v3.0. See LICENSE for details.
-
-
-Contributors
-
-Mrunal Gangurde
-
-Feel free to reach out for collaboration or queries!
-
+⭐ If you found this project useful, feel free to star the repository!
